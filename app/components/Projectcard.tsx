@@ -93,10 +93,9 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
               e.stopPropagation();
               window.open(project.sourceUrl, "_blank");
             }}
-            variant="outline"
-            className="flex-1 border-gray-700 hover:border-orange-500 rounded-xl text-sm sm:text-base py-4 sm:py-5"
+            className="flex-1 bg-white hover:bg-gray-100 text-black rounded-xl text-sm sm:text-base py-4 sm:py-5 border-0"
           >
-            <Github className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
+            <Github className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 text-black" />
             Code
           </Button>
         </div>

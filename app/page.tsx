@@ -8,6 +8,8 @@ import { Projects } from "./components/Projects";
 import { projects } from "./data/projects";
 import { Skills } from "./components/Skills";
 import { About } from "./components/About";
+import { Contact } from "./components/Contact";
+import { ProjectDetail } from "./components/ProjectDetails";
 
 export default function Page() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -28,7 +30,12 @@ export default function Page() {
         </div>
         <Skills />
         <About />
+        <Contact />
       </div>
+      <ProjectDetail
+        project={selectedProject}
+        onClose={() => setSelectedProject(null)}
+      />
     </div>
   );
 }

@@ -50,11 +50,10 @@ export function Hero({ onViewProjects }: HeroProps) {
               <ArrowDown className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
             </Button>
             <Button
-              variant="outline"
-              onClick={() => window.open("https://github.com", "_blank")}
-              className="border-gray-700 hover:border-orange-500 px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-xl w-full sm:w-auto"
+              onClick={() => window.open("https://github.com/kiarongovender", "_blank")}
+              className="bg-white hover:bg-gray-100 text-black px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-xl w-full sm:w-auto border-0"
             >
-              <GithubIcon className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
+              <GithubIcon className="mr-2 w-4 h-4 sm:w-5 sm:h-5 text-black" />
               GitHub
             </Button>
           </div>

@@ -216,4 +216,46 @@ export const projects: Project[] = [
       "Building middleware that's transparent to existing applications",
     ],
   },
+  {
+    id: "6",
+    name: "Modular",
+    description:
+      "Modular e-commerce platform with a dynamic product builder, order processing, and payment integration",
+    problem:
+      "Designed and built a modular e-commerce system that allows users to configure products dynamically, manage cart state, and complete secure payments while ensuring consistency between client state, server logic, and external payment services",
+    techStack: [
+      "Next.js (App Router)",
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Paystack API",
+      "Server Actions / API Routes",
+    ],
+    image: "/modular.png",
+    liveUrl: "https://modular-rosy.vercel.app/",
+    sourceUrl: "https://github.com/kiaronGovender/modular",
+    overview:
+      "Modular is a full-stack e-commerce application focused on correctness, state management, and real-world payment flows. The system supports dynamic product configuration, cart persistence, server-side order creation, and Paystack payment verification. I built this project to move beyond UI-centric development and focus on backend logic, data flow, and system reliability.",
+    features: [
+      "Dynamic product builder with URL-based routing and typed configuration state",
+      "Centralized cart state with add, update, and remove operations",
+      "Server-side order creation and validation before payment initialization",
+      "Secure Paystack payment initialization and verification flow",
+      "Dedicated order history page driven by server-rendered data",
+      "Static and dynamic route separation for performance and scalability",
+    ],
+    challenges: [
+      "Designing a reliable payment flow that separates order creation from payment verification",
+      "Ensuring type safety across client components, server routes, and API responses",
+      "Managing cart and order state without introducing inconsistent or duplicated data",
+      "Handling dynamic routes and data fetching correctly in the Next.js App Router",
+    ],
+    learnings: [
+      "Applied system design principles to model order lifecycles and payment states",
+      "Learned how to design server-first logic instead of relying solely on client state",
+      "Gained experience integrating and verifying third-party payment APIs securely",
+      "Improved understanding of data flow, separation of concerns, and failure handling",
+      "Strengthened TypeScript usage to enforce correctness across the entire application",
+    ],
+  }
 ];
