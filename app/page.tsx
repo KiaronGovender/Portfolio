@@ -7,6 +7,7 @@ import { Navigation } from "./components/Navigation";
 import { Projects } from "./components/Projects";
 import { projects } from "./data/projects";
 import { Skills } from "./components/Skills";
+import { About } from "./components/About";
 
 export default function Page() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -26,6 +27,7 @@ export default function Page() {
           <Projects projects={projects} onProjectClick={setSelectedProject} />
         </div>
         <Skills />
+        <About />
       </div>
     </div>
   );
