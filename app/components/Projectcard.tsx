@@ -90,8 +90,10 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
         <div className="flex gap-2 sm:gap-3 pt-2">
           <Button
             onClick={(e) => {
-              e.stopPropagation();
-              window.open(project.liveUrl, "_blank");
+              if (!project.inProgress) {
+                e.stopPropagation();
+                window.open(project.liveUrl, "_blank");
+              }
             }}
             className="flex-1 bg-orange-500 hover:bg-orange-600 text-white rounded-xl text-sm sm:text-base py-4 sm:py-5"
           >
@@ -100,8 +102,10 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
           </Button>
           <Button
             onClick={(e) => {
-              e.stopPropagation();
-              window.open(project.sourceUrl, "_blank");
+              if (!project.inProgress) {
+                e.stopPropagation();
+                window.open(project.sourceUrl, "_blank");
+              }
             }}
             className="flex-1 bg-white hover:bg-gray-100 text-black rounded-xl text-sm sm:text-base py-4 sm:py-5 border-0"
           >
