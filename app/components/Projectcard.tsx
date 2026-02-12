@@ -17,6 +17,7 @@ export interface Project {
   features: string[];
   challenges: string[];
   learnings: string[];
+  inProgress: boolean;
 }
 
 interface ProjectCardProps {
@@ -42,6 +43,15 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
           fill
         />
         <div className="absolute inset-0 bg-linear-to-t from-gray-900 via-gray-900/20 to-transparent opacity-60"></div>
+
+        {/* In Progress Badge */}
+        {project.inProgress && (
+          <div className="absolute top-3 right-3 sm:top-4 sm:right-4">
+            <Badge className="bg-orange-500/90 text-white border-orange-400 hover:bg-orange-500 text-xs sm:text-sm font-semibold backdrop-blur-sm shadow-lg">
+              🚧 In Progress
+            </Badge>
+          </div>
+        )}
       </div>
 
       {/* Project Info */}

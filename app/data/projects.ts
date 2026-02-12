@@ -43,6 +43,7 @@ export const projects: Project[] = [
       "Rate limiting patterns and exponential backoff for external API integration",
       "OAuth 2.0 flow implementation and security best practices",
     ],
+    inProgress: true,
   },
   {
     id: "2",
@@ -87,6 +88,7 @@ export const projects: Project[] = [
       "Building keyboard-driven UIs with proper accessibility (ARIA labels, focus management)",
       "Next.js App Router with server components for optimal performance",
     ],
+    inProgress: true,
   },
   {
     id: "3",
@@ -125,6 +127,7 @@ export const projects: Project[] = [
       "Performance profiling with Chrome DevTools - identified and fixed 3 major memory leaks",
       "State management patterns for distributed systems",
     ],
+    inProgress: true,
   },
   {
     id: "4",
@@ -170,6 +173,7 @@ export const projects: Project[] = [
       "Bundle size optimization strategies (tree-shaking, code splitting, dynamic imports)",
       "Building developer tools that integrate into existing workflows",
     ],
+    inProgress: true,
   },
   {
     id: "5",
@@ -215,6 +219,7 @@ export const projects: Project[] = [
       "HTTP caching headers (ETag, Cache-Control, Last-Modified) and how to leverage them",
       "Building middleware that's transparent to existing applications",
     ],
+    inProgress: true,
   },
   {
     id: "6",
@@ -257,5 +262,6 @@ export const projects: Project[] = [
       "Improved understanding of data flow, separation of concerns, and failure handling",
       "Strengthened TypeScript usage to enforce correctness across the entire application",
     ],
-  }
+    inProgress: false,
+  },
 ];
